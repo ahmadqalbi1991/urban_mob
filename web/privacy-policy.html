@@ -1,0 +1,360 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="x-ua-compatible" content="ie=edge">
+   <title>Urban </title>
+   <meta name="description" content="">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+   <!-- Place favicon.ico in the root directory -->
+   <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+
+   <!-- CSS here -->
+   <link rel="stylesheet" href="assets/css/bootstrap.css">
+   <link rel="stylesheet" href="assets/css/animate.css">
+   <link rel="stylesheet" href="assets/css/swiper-bundle.css">
+   <link rel="stylesheet" href="assets/css/splide.css">
+   <link rel="stylesheet" href="assets/css/slick.css">
+   <link rel="stylesheet" href="assets/css/nouislider.css">
+   <link rel="stylesheet" href="assets/css/datepicker.css">
+   <link rel="stylesheet" href="assets/css/magnific-popup.css">
+   <link rel="stylesheet" href="assets/css/font-awesome-pro.css">
+   <link rel="stylesheet" href="assets/css/flaticon_kleaso.css">
+   <link rel="stylesheet" href="assets/css/circularProgressBar.css">
+   <link rel="stylesheet" href="assets/css/spacing.css">
+   <link rel="stylesheet" href="assets/css/main.css">
+
+</head>
+
+<body>
+   <!--[if lte IE 9]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+      <![endif]-->
+
+   <!-- pre loader area start -->
+   <div id="loading">
+      <div id="loading-center">
+         <div id="loading-center-absolute">
+            <div class="tp-loading-content text-center">
+               <div class="loading-infinity">
+                  <div><span></span></div>
+                  <div> <span></span></div>
+                  <div> <span></span></div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- pre loader area end -->
+
+   <!-- back to top start -->
+   <div class="back-to-top-wrapper">
+      <button id="back_to_top" type="button" class="back-to-top-btn">
+         <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M11 6L6 1L1 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+               stroke-linejoin="round" />
+         </svg>
+      </button>
+   </div>
+   <!-- back to top end -->
+
+   <!-- header area start -->
+   <header class="tp-header-area p-relative" style="box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);">
+
+      <div id="header-sticky" class="tp-header-bottom p-relative ">
+         <div class="tp-header-color"></div>
+         <div class="tp-header-space p-relative z-index-1">
+
+            <div class="container-fluid">
+               <div class="row align-items-center">
+                  <div class="col-6 col-lg-6 col-xl-2">
+                     <div class="tp-header-logo tp-header-logo-border mb-5 mt-5">
+                        <a href="index.html">
+                           <img src="assets/img/logo/logo.svg" alt="">
+                        </a>
+                     </div>
+                  </div>
+
+                  <div class="col-6 col-lg-6 col-xl-10">
+                     <div class="tp-header-right d-flex align-items-center justify-content-xxl-end">
+
+
+                        <div class="search-form p-relative">
+                           <form action="#">
+                              <input type="text" placeholder="Search service">
+                              <button><i class="fa-regular fa-search"></i></button>
+                           </form>
+                        </div>
+
+                        <div class="tp-header-market  ml-10 p-relative d-none d-xxl-block">
+                        <a href=""><img src="assets/img/home page images/profile picture.jpg" alt=""></a>  
+                           <!-- <button id="login-button">Login</button> -->
+                        </div>
+                        
+                         <div class="tp-header-market  p-relative d-none d-xxl-block">
+                           <a class="button-edit" href="#" onclick="show('popupk1')"><span">john doe</span></a>
+                        </div>
+                        <div class="popupk1" id="popupk1">
+                           <div style="text-align: end;"><a href="#" onclick="hide('popupk1')">X</a></div>
+                           <div style="text-align: start; font-size: 15px; margin-left: 10px;">
+                           <a class="mt-15" href="My-Order.html"> My Order</a><br/>
+                           <a class="mt-15" href="My-Profile.html"> My Profile</a><br/>
+                           <a class="mt-15" href="My-Address.html"> My Address</a>
+                           <hr>
+                           <a class="mt-15" href=""> Terms & Condition</a><br/>
+                           <a class="mt-15" href=""> Privacy Policies</a><br/>
+                           <a class="mt-15" href=""> Contact Support</a><br/>
+                           <hr>
+                           <a href="">Log Out</a>
+                         </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </header>
+   <!-- header area end -->
+
+
+   <!-- mobile menu style start -->
+   <div class="tp-offcanvas-area fix" style="background-color: brown;">
+      <div class="tp-side-info">
+         <div class="tp-side-logo">
+            <a href="index.html">
+               <img src="assets/img/logo/logo.svg" alt="logo">
+            </a>
+         </div>
+         <div class="tp-side-close">
+            <button> <i class="fa-thin fa-xmark"></i></button>
+         </div>
+         <div class="tp-mobile-menu-pos"></div>
+         <div class="tp-side-content p-relative">
+            <div class="tp-sidebar__contact">
+               <h4 class="tp-sidebar-title">Contact Info</h4>
+               <ul>
+
+                  <li class="d-flex align-items-center">
+                     <div class="tp-sidebar__contact-text">
+                        <a href="telto:088889797697"><i class="far fa-phone"></i> 088889797697</a>
+                     </div>
+                  </li>
+                  <li class="d-flex align-items-center">
+                     <div class="tp-sidebar__contact-text">
+                        <a href="mailto:Kleasoinfo@gmail.com"><i class="fal fa-envelope"></i> info@gmail.com</a>
+                     </div>
+                  </li>
+               </ul>
+            </div>
+            <div class="tp-sidebar-icons tp-btn-effect-blue">
+               <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+               <a href="#"><i class="fa-brands fa-twitter"></i></a>
+               <a href="#"><i class="fa-brands fa-skype"></i></a>
+               <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+         </div>
+      </div>
+      <div class="offcanvas-overlay"></div>
+   </div>
+   <!-- mobile menu style end -->
+   <main>
+   
+      <section class="pt-50  p-relative">
+      <div class="container" style="text-align: start;" >
+    
+             <h3><i class="fa-thin fa-circle-arrow-right" style="background-color: rgb(255,140,0); border-radius: 50px; margin-right: 5px;"></i> Privacy Policy</h3>
+             <p>Last updated: August 2020</p>
+        <hr style="margin-top: 40px;">
+        </div>
+
+       <div class="container mt-40" style="text-align: start;" >
+    
+            <h3><i class="fa-thin fa-circle-arrow-right" style="background-color: rgb(255,140,0); border-radius: 50px; margin-right: 5px;"></i> Who we are</h3>
+            <p>Our website address is https://startbootstrap.com.</p>
+        <hr style="margin-top: 40px;"> 
+       </div>
+
+       <div class="container mt-40" style="text-align: start;" >
+    
+        <h3><i class="fa-thin fa-circle-arrow-right" style="background-color: rgb(255,140,0); border-radius: 50px; margin-right: 5px;"></i> Who on our team has access</h3>
+        <p>Members of our web development team have access to the information you provide us. 
+            For example, administrators can access order information like what was purchased and when 
+            it was purchased, and Customer information like your name, email address, and additional optional information.
+             Our administrators have access to
+             this information to help fulfill orders and provide you with support.</p>
+       <hr style="margin-top: 40px;">
+      </div>
+
+     <div class="container mt-40" style="text-align: start;" >
+    
+      <h3><i class="fa-thin fa-circle-arrow-right" style="background-color: rgb(255,140,0); border-radius: 50px; margin-right: 5px;"></i> Payments</h3>
+      
+      <p>We accept payments through Stripe and PayPal. When processing payments, some of your data will be passed to Stripe or PayPal, 
+        including information required to process or support the payment, such as the purchase total and billing information.
+       <br/>
+       <br/>
+        Start Bootstrap does not process the payments made, and does not ever have access to your credit card information.
+        <br/>
+        <br/>
+        Please see the Stripe Privacy Policy or PayPal Privacy Policy for more details.</p>
+      <hr style="margin-top: 40px;">
+      </div>
+
+      </section>
+
+
+<div class="container mt-40 mb-40" style="box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);">
+    <sbw-newsletter-signup _ngcontent-serverapp-c52="" _nghost-serverapp-c51="">
+       <div _ngcontent-serverapp-c51="" class="card p-sm-4 p-md-5 signup-form">
+          <div _ngcontent-serverapp-c51="" class="card-body">
+             <h3 style="text-align: start;">Want more Bootstrap themes, templates, and UI tools?</h3>
+             <p style="text-align: start;" class="lead">Subscribe to get updated when new Bootstrap related products arrive!</p>
+             <form _ngcontent-serverapp-c51="" novalidate="" class="ng-untouched ng-pristine ng-invalid">
+                <div _ngcontent-serverapp-c51="" class="input-group">
+                   <input _ngcontent-serverapp-c51="" data-cy="newsletterSignupEmailButton" type="email" name="EMAIL" placeholder="Email address..." aria-label="Your email address..." formcontrolname="email" class="form-control ng-untouched ng-pristine ng-invalid">
+                   <button _ngcontent-serverapp-c51="" data-cy="newsletterSignupSubmit" type="submit" class="btn-signup btn btn-primary fw-500" disabled="">Subscribe!</button>
+                   <div _ngcontent-serverapp-c51="" class="invalid-feedback mt-2">Email required.</div><!----><!---->
+                </div></form>
+                <p style="text-align: start;" class="text-xs fst-italic mt-4">This site is protected by reCAPTCHA and the Google <a _ngcontent-serverapp-c51="" href="https://policies.google.com/privacy" target="_blank" rel="noreferrer">Privacy Policy </a>
+                   and <a _ngcontent-serverapp-c51="" href="https://policies.google.com/terms" target="_blank" rel="noreferrer">Terms of Service </a>
+                   apply.</p></div>
+    </div>
+</sbw-newsletter-signup>
+    </div>
+ </main>
+   <!-- footer area start -->
+   <footer class="tp-footer-area p-relative mt-80 pt-50 bg-footer ">
+      <div class="tp-footer-wrapper ">
+
+         <div class="tp-footer-inner-content tp-footer-plr">
+
+            <div class="tp-footer-widget-area pb-40">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-12 col-md-4 col-lg-2 ">
+                        <div class="tp-footer-widget-1 pl-25 ">
+                           <span class=" ">Company</span>
+                           <ul class="tp-footer-list-float">
+                              <li><a href="#">Our Services</a></li>
+                              <li><a href="#">About Us</a></li>
+
+                           </ul>
+                        </div>
+                     </div>
+                     <div class="col-12 col-md-4 col-lg-2 ">
+                        <div class="tp-footer-widget-1 pl-25 ">
+                           <span class="">Customers</span>
+                           <ul class="tp-footer-list-float">
+                              <li><a href="Terms-Conditions.html">Terms & Conditions</a></li>
+                              <li><a href="privacy-policy.html">Privacy Policies</a></li>
+                              <li><a href="Contact-Support.html">Contact Support</a></li>
+
+                           </ul>
+                        </div>
+                     </div>
+                     <div class="col-12 col-md-4 col-lg-3">
+                        <div class="tp-footer-widget-2  mb-30">
+                           <span class="">Contact Us</span>
+
+                           <div class="tp-footer-widget-contact r">
+
+                              <div class="contact-inner">
+
+                                 <a href="mailto:booknow@urbanmop.com">booknow@urbanmop.com </a>
+                                 <a href="tel:+971-52-618-8291"> +971-52-618-8291</a>
+                                 <a href="tel:+971-58-581-4007"> +971-58-581-4007</a>
+                              </div>
+                           </div>
+
+                        </div>
+                     </div>
+                     <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="tp-footer-widget-2  mb-30">
+                           <span class="">Download App</span>
+                           <ul class="l-s-none">
+                              <li><a href="#"><img src="assets/img/urbanmop-on-playstore.png"></a></li>
+                              <li><a href="#"><img src="assets/img/urbanmop-on-appstore.png"></a></li>
+
+                           </ul>
+                        </div>
+                     </div>
+                     <div class="col-12 col-sm-6 col-md-6 col-lg-2">
+                        <div class="tp-footer-widget-4 pl-20 mb-30">
+                           <span class="">Follow Us On</span>
+                           <div
+                              class="tp-footer-social d-flex justify-content-start justify-content-md-end align-items-center">
+
+                              <a href="#"><img src="assets/img/facebook.svg"></a>
+                              <a href="#"><img src="assets/img/instagram.svg"></a>
+                              <a href="#"><img src="assets/img/linkedin.svg"></a>
+                              <a href="#"><img src="assets/img/twitter.png"></a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="tp-footer-copyright">
+            <div class="container">
+               <div class="row align-items-center justify-content-center">
+                  <div class="col-lg-12">
+                     <p class="text-center border-top-1">Copyright © website made by webenliven</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </footer>
+   <!-- footer area end -->
+
+
+
+   <!-- JS here -->
+   <script src="assets/js/vendor/jquery.js"></script>
+   <script src="assets/js/vendor/waypoints.js"></script>
+   <script src="assets/js/bootstrap-bundle.js"></script>
+   <script src="assets/js/meanmenu.js"></script>
+   <script src="assets/js/swiper-bundle.js"></script>
+   <script src="assets/js/splide.js"></script>
+   <script src="assets/js/slick.min.js"></script>
+   <script src="assets/js/nouislider.js"></script>
+   <script src="assets/js/magnific-popup.js"></script>
+   <script src="assets/js/nice-select.js"></script>
+   <script src="assets/js/wow.js"></script>
+   <script src="assets/js/datepicker.js"></script>
+   <script src="assets/js/isotope-pkgd.js"></script>
+   <script src="assets/js/imagesloaded-pkgd.js"></script>
+   <script src="assets/js/jquery.appear.js"></script>
+   <script src="assets/js/jquery.knob.js"></script>
+   <script src="assets/js/circularProgressBar.min.js"></script>
+   <script src="assets/js/purecounter.js"></script>
+   <script src="assets/js/ajax-form.js"></script>
+   <script src="assets/js/main.js"></script>
+
+   <script>
+      $ = function(id) {
+        return document.getElementById(id);
+      }
+      
+      var show = function(id) {
+         $(id).style.display ='block';
+      }
+      var hide = function(id) {
+         $(id).style.display ='none';
+      }
+      </script>
+
+</body>
+
+</html>
+
+
+       
+   
+
+    
+ 

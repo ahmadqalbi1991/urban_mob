@@ -1,0 +1,70 @@
+
+// Basic Input
+
+.form-control{
+    border-radius: 0;
+    border: 1px solid $border;
+    &:hover,&:focus,&.active{
+        box-shadow: none;
+    }
+}
+
+
+.input-rounded {
+    border-radius: 100px;
+}
+
+
+// Text area
+
+
+
+
+
+// Input Size/
+.form-control{
+    // min-height: 40px;
+}
+.form-control-sm{
+    min-height: 36px;
+}
+.form-control-lg{
+    min-height: 52px;
+}
+
+
+
+// Input Group
+
+// .input-group-text{
+//     background: $primary;
+//     color: $white;
+//     border: 1px solid $primary;
+//     border-radius: 0px!important;
+// }
+
+.input-group-prepend .btn,
+.input-group-append .btn {
+    z-index: 0;
+}
+
+
+
+.custom-select{
+    background: none;
+    border-radius: 0px!important;
+    &:focus{
+        box-shadow: none;
+    }
+}
+
+
+.custom-file-label{
+    border-radius: 0px!important;
+    &:after{
+        background: $primary;
+        border: 1px solid $primary;
+        color: $white;
+    }
+}
+

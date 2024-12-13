@@ -1,0 +1,230 @@
+.order_checkout_form {
+    margin-top: 2rem;
+
+    .wizard {
+        margin-bottom: 5rem;
+        padding-top: 6rem;
+
+        &> .actions {
+            bottom: -4.0625rem;
+
+            @at-root [direction="rtl"] & {
+                text-align: left;
+
+                li {
+                    float: right;
+                }
+            }
+        }
+
+        &> .steps {
+            position: absolute;
+            top: 0;
+
+            a, 
+            a:hover, 
+            a:active {
+                padding: 1.5rem;
+
+                @include media-breakpoint-down(sm) {
+                    padding: 1rem;
+                }
+            }
+
+            li.current a, 
+            li.disabled a, 
+            li.done a {
+                background-color: transparent !important;
+            } 
+    
+            li a .number, 
+            li a .step-name {
+                top: 0;
+                height: 3rem;
+                width: 3rem;
+                border-radius: 4px;
+
+                @include media-breakpoint-down(sm) {
+                    height: 2rem;
+                    width: 2rem;
+                    font-size: 0.75rem;
+                }
+            }
+    
+            li:not(:last-child)::after {
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+
+        &>.content {
+            @include media-breakpoint-down(sm) {
+                min-height: 38rem;
+            }
+
+            .body {
+                @include media-breakpoint-down(xs) {
+                    padding: 0.75rem;
+                }
+            }
+        }
+    }
+
+    .shipping_methods {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 1.5625rem;
+
+        input[type="radio"] {
+            display: none;
+
+            &:checked + .shipping-method {
+                border-color: $primary;
+
+                .name {
+                    display: none;
+                }
+
+                .price {
+                    display: block;
+                }
+
+                &::after {
+                    position: absolute;
+                    height: 30px;
+                    width: 30px;
+                    background: $primary;
+                    content: "\e64c";
+                    font-family: 'themify';
+                    color: $white;
+                    border-radius: 50px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border: 2px solid rgba($primary, .5);
+                    right: 0;
+                    top: 0;
+                    transform: translate(35%, -40%);
+                }
+            }
+        }
+
+        &>div {
+            flex-basis: 23%;
+
+            @include media-breakpoint-down(xs) {
+                flex-basis: 48%;
+            }
+        }
+    }
+
+    .shipping-method {
+        width: 100%;
+        display: flex !important;
+        flex-direction: column;
+        align-items: center;
+        border: 1px solid #ddd;
+        border-radius: 0.3125rem;
+        padding: 1.25rem 0;
+        position: relative;
+
+        .icon {
+            font-size: 3.125rem;
+            line-height: 1;
+        }
+
+        .name {
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            display: block;
+        }
+
+        .price {
+            display: none;
+            font-size: 0.75rem;
+            font-weight: 700;
+        }
+    }
+
+    .order_total {
+        text-align: center;
+
+        &>* {
+            display: block;
+        }
+
+        .icon {
+            font-size: 1.625rem;
+        }
+    }
+
+    .order_varification {
+        td {
+            line-height: 1.3;
+        }
+    }
+
+    .payment_methods {
+        .icon {
+            font-size: 3.125rem;
+        }
+
+        .name {
+            text-transform: uppercase;
+        }
+
+        .payment_method {
+            cursor: pointer;
+            border: 2px solid transparent;
+
+            &:hover {
+                border: 2px solid #ddd;
+            }
+
+            .card-body {
+                @include media-breakpoint-down(xs) {
+                    padding: 0.3125rem 0;
+                }
+            }
+        }
+    }
+
+    .payment_method_form {
+        display: none;
+    }
+
+    .credit_card_icon {
+        text-align: center;
+
+        .icon {
+            font-size: 9.375rem;
+
+            @include media-breakpoint-down(sm) {
+                font-size: 7.5rem;
+            }
+        }
+    }
+
+    .cash_icon {
+        text-align: center;
+
+        .icon {
+            font-size: 30px;
+        }
+    }
+}
+
+.order_checkout_form {
+    .bootstrap-select .dropdown-toggle, 
+    .bootstrap-select .btn-light:active, .bootstrap-select .btn-light:focus, .bootstrap-select .btn-light:hover, 
+    .btn-light:not(:disabled):not(.disabled):active, .btn-light:not(:disabled):not(.disabled).active, .show > .btn-light.dropdown-toggle 
+    {
+        background: $white;
+        color: $body-color !important;
+        border: 1px solid $border;
+        outline: none !important;
+    }
+}
+

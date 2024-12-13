@@ -1,0 +1,67 @@
+
+.header-left {
+    float: left;
+    margin-left: 50px;
+    line-height: 3.75rem;
+    height: 100%;
+
+    .icons {
+        float: left;
+        margin: 0;
+        padding: 0 0.3125rem;
+        position: relative;
+
+        i {
+            color: $dark;
+        }
+
+        &>a {
+            padding: 0 0.3125rem;
+            color: $dark;
+        }
+    }
+    .input-group  {
+        height: 100%;
+        
+        .input-group-text {
+            font-size: 1rem;
+
+            @include media-breakpoint-down(xs) {
+                padding-left: .5rem;
+            }
+
+        }
+    }
+    .drop-down {
+        // top: 0;
+        height: 100%;
+        box-shadow: none;
+        width: 100%;
+        
+        form {
+            height: 100%;
+        }
+
+        input.form-control {
+            height: 100%;
+            border: none;
+
+            &:focus {
+                box-shadow: none;
+            }
+        }
+    }
+}
+
+
+[data-sidebar-style="compact"] {
+    .header {
+        .header-left {
+            margin-left: 0;
+    
+            @at-root [direction="rtl"]#{&} {
+                margin-right: 10px;
+            }
+        }
+    }
+}

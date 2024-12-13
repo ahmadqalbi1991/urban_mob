@@ -1,0 +1,69 @@
+RewriteEngine On
+RewriteCond %{HTTP_HOST} !^www\. [NC]
+RewriteRule ^(.*)$ https://www.%{HTTP_HOST}/$1 [R=301,L]
+
+Redirect 301 /5-things-to-know-about-air-conditioner-ac-leakage-urbanmop-blogs-dubai.html https://www.urbanmop.com/blogs
+Redirect 301 /top-6-reasons-to-get-your-sofa-cleaned-professionally-urbanmop-blogs-dubai.html https://www.urbanmop.com/blogs
+Redirect 301 /contact-us.php https://www.urbanmop.com/contact-support
+Redirect 301 /urbanmop-best-disinfection-service-uae.html https://www.urbanmop.com/service/details/24
+Redirect 301 /urbanmop-best-deep-cleaning-service-uae.html https://www.urbanmop.com/service/details/14
+Redirect 301 /urbanmop-best-pest-control-service-uae.html https://www.urbanmop.com/service/details/13
+Redirect 301 /urbanmop-best-home-service-uae.html https://www.urbanmop.com/service/details/10
+Redirect 301 /urbanmop-best-handyman-service-uae.html https://www.urbanmop.com/service/details/22
+Redirect 301 /urbanmop-best-ac-cleaning-service-uae.html https://www.urbanmop.com/service/details/21
+Redirect 301 /urbanmop-pcr-test-247-uae.html https://www.urbanmop.com/service/details/23
+Redirect 301 /blog.html https://www.urbanmop.com/blogs
+Redirect 301 /urbanmop-best-home-cleaning-service-uae.html https://www.urbanmop.com/service/details/10
+Redirect 301 /urbanmop-best-water-tank-cleaning-service-uae.html https://www.urbanmop.com/service/details/20
+Redirect 301 /urbanmop-best-sofa-cleaning-service-uae.html https://www.urbanmop.com/service/details/12
+Redirect 301 /aboutus.html https://www.urbanmop.com/service/details/12
+Redirect 301 /urbanmop-best-Facility-management-service-dubai-book-now.php https://www.urbanmop.com/
+Redirect 301 /signs-to-get-your-sofa-Deep-cleaned-professionally-urbanmop-blogs-dubai.html https://www.urbanmop.com/blogs
+Redirect 301 /urbanmop-best-painting-service-uae.html https://www.urbanmop.com/service/details/18
+Redirect 301 /urbanmop-best-swimming-pool-cleaning-service-uae.html https://www.urbanmop.com/service/details/20
+Redirect 301 /top-5-reasons-why-you-need-regular-pest-control-urbanmop-blogs-dubai.html https://www.urbanmop.com/blogs
+Redirect 301 /washing-machine-usage-guide-urbanmop-blogs-dubai.html https://www.urbanmop.com/blogs
+Redirect 301 /the-benefits-of-hiring-a-professional-sofa-cleaning-urbanmop-blogs-dubai.html https://www.urbanmop.com/blogs
+Redirect 301 /urbanmop-best-electrical-service-uae.html https://www.urbanmop.com/service/details/26
+Redirect 301 /why-hire--specialist-professional-clean-sofa-mattress-interior-furniture--home-urbanmop-blogs-dubai.html https://www.urbanmop.com/blogs
+
+RewriteRule ^service/details/10$ https://www.urbanmop.com/service/details/maid-service [R=301,L]
+RewriteRule ^service/details/12$ https://www.urbanmop.com/service/details/sofa-carpet-mattress-curtain-cleaning [R=301,L]
+RewriteRule ^service/details/13$ https://www.urbanmop.com/service/details/pest-control-treatment [R=301,L]
+RewriteRule ^service/details/14$ https://www.urbanmop.com/service/details/full-deep-cleaning [R=301,L]
+RewriteRule ^service/details/15$ https://www.urbanmop.com/service/details/salon-at-home [R=301,L]
+RewriteRule ^service/details/25$ https://www.urbanmop.com/service/details/spa-at-home [R=301,L]
+RewriteRule ^service/details/16$ https://www.urbanmop.com/service/details/pet-grooming [R=301,L]
+RewriteRule ^service/details/21$ https://www.urbanmop.com/service/details/ac-cleaning-service [R=301,L]
+RewriteRule ^service/details/18$ https://www.urbanmop.com/service/details/painting-service [R=301,L]
+RewriteRule ^service/details/20$ https://www.urbanmop.com/service/details/plumber-service [R=301,L]
+RewriteRule ^service/details/19$ https://www.urbanmop.com/service/details/car-wash [R=301,L]
+RewriteRule ^service/details/22$ https://www.urbanmop.com/service/details/handyman-service [R=301,L]
+RewriteRule ^service/details/26$ https://www.urbanmop.com/service/details/electrical-service [R=301,L]
+RewriteRule ^service/details/24$ https://www.urbanmop.com/service/details/disinfection-service [R=301,L]
+RewriteRule ^service/details/17$ https://www.urbanmop.com/service/details/laundry-service [R=301,L]
+
+<IfModule mod_rewrite.c>
+    <IfModule mod_negotiation.c>
+        Options -MultiViews -Indexes
+    </IfModule>
+
+    RewriteEngine On
+
+    # Handle Authorization Header
+    RewriteCond %{HTTP:Authorization} .
+    RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+
+    # Redirect Trailing Slashes If Not A Folder...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_URI} (.+)/$
+    RewriteRule ^ %1 [L,R=301]
+
+    # Send Requests To Front Controller...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^ index.php [L]
+</IfModule>
+
+
+Redirect 301 /5-things-to-know-about-air-conditioner-ac-leakage-urbanmop-blogs-dubai.html /blogs

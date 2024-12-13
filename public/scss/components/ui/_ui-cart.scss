@@ -1,0 +1,95 @@
+.shopping_cart {
+    
+    @include custommq($max: 1470px) {
+        overflow-x: scroll;
+
+        &>div {
+            min-width: 28.125rem;
+        }
+    }
+
+    .list-group-item {
+        padding: 0 0 0.625rem;
+        border: 0;
+        margin-bottom: 0.625rem;
+
+        &:not(:last-child) {
+            border-bottom: 1px solid $border;
+
+            @at-root [data-theme-version="dark"] & {
+                border-color: $d-border;
+            }
+        }
+
+        @at-root [data-theme-version="dark"] & {
+            background-color: $dark-card;
+        }
+    }
+
+    .item_name {
+        flex-basis: 50%;
+
+        @include custommq($max: 1440px) {
+            flex-basis: 45%;
+        }
+    }
+
+    .number_input {
+        flex-basis: 15%;
+    }
+
+    .item_price {
+        flex-basis: 12%;
+    }
+
+    .item_bill {
+        flex-basis: 13%;
+    }
+
+    .remove_button {
+        flex-basis: 10%;
+    }
+}
+
+.select_order_place {
+    .bootstrap-select .dropdown-toggle {
+        background: transparent;
+        color: $body-color !important;
+
+        @at-root [data-theme-version="dark"] & {
+            box-shadow: none;
+        }
+    }
+
+    @at-root [data-theme-version="dark"] & {
+        .btn-light:not(:disabled):not(.disabled):active, 
+        .btn-light:not(:disabled):not(.disabled).active, 
+        .show > .btn-light.dropdown-toggle {
+            background-color: $dark-card;
+        }
+    }
+
+    .bootstrap-select .dropdown-toggle:focus, 
+    .bootstrap-select>select.mobile-device:focus+.dropdown-toggle {
+        outline: none !important;
+    }
+}
+
+.show_cart {
+    position: relative;
+    background-color: transparent;
+    border: none;
+    color: $primary;
+    font-size: 20px;
+    padding: 0;
+
+    .badge {
+        position: absolute;
+        left: 0;
+        top: 0;
+        border-radius: 50%;
+        transform: translate(-50%, -50%);
+        padding: 1px 5.4px;
+        font-size: 10px;
+    }
+}

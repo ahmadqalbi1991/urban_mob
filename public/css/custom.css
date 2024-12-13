@@ -1,0 +1,38 @@
+.loader::before
+{
+	background-image: unset;
+	border: 5px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 5px solid #130101;
+  border-bottom: 5px solid #130101;
+  width: 55px;
+  height: 55px;
+}
+.loader::after
+{
+	background-image: unset;
+	border: 5px solid #f3f3f3;
+	  border-radius: 50%;
+	  border-top: 5px solid #130101;
+	  border-bottom: 5px solid #130101;
+	  width: 55px;
+	  height: 55px;
+}
+.brand-logo img
+{
+	width: 88px !important;
+}
+
+.admin-logo img
+{
+	width: 80px !important;
+}
+
+.brand-logo .logo-abbr img
+{
+	width: 35px;
+}
+.form-group
+{
+	box-sizing: border-box;
+}

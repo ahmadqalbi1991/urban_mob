@@ -1,0 +1,77 @@
+RewriteEngine On
+RewriteCond %{HTTP_HOST} !^www\. [NC]
+RewriteRule ^(.*)$ http://www.%{HTTP_HOST}/$1 [R=301,L]
+
+Redirect 301 https://www.urbanmop.com/blogs https://www.urbanmop.com/login
+
+
+<IfModule mod_rewrite.c>
+    <IfModule mod_negotiation.c>
+        Options -MultiViews -Indexes
+    </IfModule>
+
+    RewriteEngine On
+
+    # Handle Authorization Header
+    RewriteCond %{HTTP:Authorization} .
+    RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+
+    # Redirect Trailing Slashes If Not A Folder...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_URI} (.+)/$
+    RewriteRule ^ %1 [L,R=301]
+
+    # Handle Front Controller...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^ index.php [L]
+</IfModule>
+
+# Disable index view
+Options -Indexes
+
+# Hide a specific file
+<Files .env>
+    Order allow,deny
+    Deny from all
+</Files>
+
+## EXPIRES CACHING ##
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType image/jpg "access plus 1 year"
+    ExpiresByType image/jpeg "access plus 1 year"
+    ExpiresByType image/gif "access plus 1 year"
+    ExpiresByType image/png "access plus 1 year"
+    ExpiresByType text/css "access plus 1 month"
+    ExpiresByType text/x-javascript "access plus 1 month"
+    ExpiresByType application/x-shockwave-flash "access plus 1 month"
+    ExpiresByType image/x-icon "access plus 1 year"
+    ExpiresDefault "access plus 1 days"
+</IfModule>
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteRule ^service/details/10$ https://www.urbanmop.com/service/details/maid-service [R=301,L]
+    RewriteRule ^service/details/12$ https://www.urbanmop.com/service/details/sofa-carpet-mattress-curtain-cleaning [R=301,L]
+    RewriteRule ^service/details/13$ https://www.urbanmop.com/service/details/pest-control-treatment [R=301,L]
+    RewriteRule ^service/details/14$ https://www.urbanmop.com/service/details/full-deep-cleaning [R=301,L]
+    RewriteRule ^service/details/15$ https://www.urbanmop.com/service/details/salon-at-home [R=301,L]
+    RewriteRule ^service/details/25$ https://www.urbanmop.com/service/details/spa-at-home [R=301,L]
+    RewriteRule ^service/details/16$ https://www.urbanmop.com/service/details/pet-grooming [R=301,L]
+    RewriteRule ^service/details/21$ https://www.urbanmop.com/service/details/ac-cleaning-service [R=301,L]
+    RewriteRule ^service/details/18$ https://www.urbanmop.com/service/details/painting-service [R=301,L]
+    RewriteRule ^service/details/20$ https://www.urbanmop.com/service/details/plumber-service [R=301,L]
+    RewriteRule ^service/details/19$ https://www.urbanmop.com/service/details/car-wash [R=301,L]
+    RewriteRule ^service/details/22$ https://www.urbanmop.com/service/details/handyman-service [R=301,L]
+    RewriteRule ^service/details/26$ https://www.urbanmop.com/service/details/electrical-service [R=301,L]
+    RewriteRule ^service/details/24$ https://www.urbanmop.com/service/details/disinfection-service [R=301,L]
+    RewriteRule ^service/details/17$ https://www.urbanmop.com/service/details/laundry-service [R=301,L]
+</IfModule>
+
+# php -- BEGIN cPanel-generated handler, do not edit
+# Set the “ea-php74” package as the default “PHP” programming language.
+<IfModule mime_module>
+  AddHandler application/x-httpd-ea-php74 .php .php7 .phtml
+</IfModule>
+# php -- END cPanel-generated handler, do not edit

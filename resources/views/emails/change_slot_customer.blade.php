@@ -1,0 +1,1 @@
+Dear {{$data?$data->user->name:''}} Your booking slot has been changed successfully. Your booking id is {{$data?$data->tran_id:''}}

@@ -1,0 +1,1 @@
+{{$data?$data->user->name:''}} changed his slot. Its booking id is {{$data?$data->tran_id:''}}.

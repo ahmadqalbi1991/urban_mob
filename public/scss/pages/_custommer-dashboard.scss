@@ -1,0 +1,34 @@
+.order__info {
+    margin-bottom: 0;
+
+    .media-body {
+        span {
+            font-size: 0.625rem;
+        }
+    }
+
+    li {
+        @include custommq($max: 1440px) {
+            margin-bottom: 0.5rem !important;
+        }
+
+        &:not(:last-child) {
+            margin-bottom: 1.625rem;
+        }
+    }
+
+    .status__icon,  
+    .status__icon {
+        width: 2.1875rem;
+        font-size: 1.25rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.progress__chart {
+    .inner span {
+        font-size: 2.5rem;
+    }
+}

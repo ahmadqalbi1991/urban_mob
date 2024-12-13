@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+ <!-- Include your custom JavaScript file -->
+<script src="script.js"></script>
+
+<!-- Add the Google Maps API library -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBvGq8LjejiKHaI5lPEUZVYbwOYSwhZMEs&libraries=places"></script>
+
+ 
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+<form method="post" action="search.php">
+  <input type="text" name="location" id="location-input" placeholder="Enter location">
+  <button type="submit">Search</button>
+</form>
+
+<div id="map"></div>
+
+
+
+</body>
+</html>
+

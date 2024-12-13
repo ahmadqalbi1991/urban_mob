@@ -1,0 +1,131 @@
+.offer_card_carousel {
+    // padding-right: 0.9375rem;
+
+    .owl-stage-outer {
+        padding-left: 0.9375rem;
+    }
+}
+
+//chart widgets
+.home_chart_widget {
+    height: 75px;
+
+    &.chart-one {
+
+        .ct-series-a .ct-area {
+            fill: $primary;
+        }
+
+        .ct-series-a .ct-line, 
+        .ct-series-a .ct-point {
+            stroke: $primary;
+        }
+        
+    }
+
+    &.chart-two {
+
+        .ct-series-a .ct-area {
+            fill: $success;
+        }
+
+        .ct-series-a .ct-line, 
+        .ct-series-a .ct-point {
+            stroke: $success;
+        }
+
+    }
+
+    &.chart-three {
+
+        .ct-series-a .ct-area {
+            fill: $info;
+        }
+
+        .ct-series-a .ct-line, 
+        .ct-series-a .ct-point {
+            stroke: $info;
+        }
+
+    }
+
+    &.chart-four {
+
+        .ct-series-a .ct-area {
+            fill: $warning;
+        }
+
+        .ct-series-a .ct-line, 
+        .ct-series-a .ct-point {
+            stroke: $warning;
+        }
+
+    }
+
+    .ct-line {
+        stroke-width: 2px;
+    }
+
+    .ct-point {
+        stroke-width: 5px;
+    }
+
+    .ct-area {
+        fill-opacity: .5;
+    }
+}
+
+
+.world_map_card {
+
+    @include custommq($min: 576px, $max: 1440px) {
+        .list-group-item {
+            flex-basis: 33%;
+        }
+    }
+
+    @include custommq($min: 576px, $max: 1200px) {
+        .list-group-item {
+            padding: 0.75rem 1rem;
+        }
+    }
+
+    @include media-breakpoint-down(xs) {
+        .list-group {
+            flex-direction: row;
+            flex-wrap: wrap;
+
+            .list-group-item {
+                border: none;
+                padding: 0.65rem 0;
+                margin-right: 2%;
+                flex-basis: 100%;
+            }
+        }
+    }
+
+
+}
+
+.performence_score {
+    @include custommq($min: 1200px, $max: 1440px) {
+        .media > img {
+            width: 35px;
+        }
+    }
+}
+
+.top_menu_widget {
+    .media>img {
+        @include media-breakpoint-down(xs) {
+            width: 35px;
+            height: 35px;
+        }
+    }
+
+    h4 {
+        @include media-breakpoint-down(xs) {
+            font-size: 14px;
+        }
+    }
+}

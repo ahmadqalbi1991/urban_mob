@@ -1,0 +1,6 @@
+{
+  "invoiceId": "6e204582-e28f-4284-9218-fd5e11adca4c",
+  "amount": 100,
+  "currency": "AED",
+  "callback_url":"https://www.urbanmop.com/careem/careem-pay-test-php"
+}

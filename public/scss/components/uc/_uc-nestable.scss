@@ -1,0 +1,36 @@
+ // Variable.scss
+
+.nestable-cart {
+    overflow: hidden;
+}
+
+// .dd-item > button {
+//     height: 2.1rem;
+// }
+.dd-handle {
+    color: $body-color;
+    background: $body-bg;
+    border-radius: 0;
+}
+.dd-handle:hover {
+    color: $body-color;
+    background: $body-bg;
+}
+// #nestable2 .dd-handle {
+    // color: $body-color;
+    // border: 1px solid $border;
+    // background: $body-bg;
+// }
+// #nestable2 .dd-handle:hover {
+//     background: $body-bg;
+// }
+// #nestable2 .dd-item>button:before {
+//     color: $body-color;
+// }
+.dd3-content:hover {
+    color: $body-color;
+    background: $body-bg;
+}
+.dd3-content {
+    color: $body-color;
+}

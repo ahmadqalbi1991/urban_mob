@@ -1,0 +1,1 @@
+<p>Congratulation! Your UrbanMop partner account is successfully verified and activated. You can now login to the partner app using your registered mobile number. For any assistance contact UrbanMop helpline at 0526188291 / 0585814007 or send email at partners@urbanmop.com</p>

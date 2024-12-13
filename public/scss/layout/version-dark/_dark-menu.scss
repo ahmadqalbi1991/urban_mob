@@ -1,0 +1,40 @@
+[data-theme-version="dark"] {
+    .vertical-card__menu {
+        .card-footer {
+            background-color: darken($d-bg,2%);
+
+            span {
+                color: $d-ctl;
+            }
+        }
+    }
+
+    .badge-lighten-primary {
+        background-color: $primary;
+        color: $white;
+    }
+    .badge-lighten-success {
+        background-color: $success;
+        color: $white;
+    }
+    .badge-lighten-warning {
+        background-color: $warning;
+        color: $white;
+    }
+    .badge-lighten-danger {
+        background-color: $danger;
+        color: $white;
+    }
+    .badge-lighten-info {
+        background-color: $info;
+        color: $white;
+    }
+    .badge-lighten-primary {
+        background-color: $primary;
+        color: $white;
+    }
+    .badge-lighten-primary {
+        background-color: $primary;
+        color: $white;
+    }
+}

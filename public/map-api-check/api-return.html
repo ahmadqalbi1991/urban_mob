@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Location Search</title>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBHrKkhwSDWrr45yqGAt2GjgF0adHLAkTU&libraries=places"></script>
+    <script>
+        function initAutocomplete() {
+            var input = document.getElementById('autocomplete-input');
+            var autocomplete = new google.maps.places.Autocomplete(input);
+
+            autocomplete.addListener('place_changed', function() {
+                var place = autocomplete.getPlace();
+                if (!place.geometry) {
+                    return;
+                }
+                document.getElementById('latitude').value = place.geometry.location.lat();
+                document.getElementById('longitude').value = place.geometry.location.lng();
+            });
+        }
+    </script>
+</head>
+<body onload="initAutocomplete()">
+    <h1>Location Search</h1>
+    <form>
+        <label for="autocomplete-input">Search for a location:</label>
+        <input type="text" id="autocomplete-input" placeholder="Enter a location">
+        <input type="hidden" id="latitude" name="latitude">
+        <input type="hidden" id="longitude" name="longitude">
+        <button type="submit">Search</button>
+    </form>
+</body>
+</html>

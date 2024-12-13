@@ -1,0 +1,107 @@
+
+
+[data-theme-version="dark"] {
+    .form-control {
+        background: $dark-card;
+        border: 1px solid $d-border;
+        color: $d-ctl;
+    }
+
+    .form-group, .input-group {      
+
+        label {
+            color: $d-ctl;
+        }
+    }
+
+    .input-group {
+
+        &-prepend {
+
+            .input-group-text {
+                border: 1px solid $d-border;
+                border-right: none;
+                border-color: $d-border !important;
+
+                @at-root [direction="rtl"]#{&} {
+                    border: 1px solid $d-border;
+                }
+            }
+
+        }
+
+        &-append {
+
+            .input-group-text {
+                border: 1px solid $d-border;
+                border-left: none;
+                border-color: $d-border !important;
+
+                @at-root [direction="rtl"]#{&} {
+                    border: 1px solid $d-border;
+                }
+            }
+
+        }
+
+        &-text {
+            background-color: $d-bg;
+        }
+    }
+
+
+    .bootstrap-select {
+        .btn {
+            background-color: $d-bg;
+            border: 1px solid $d-border !important;
+            color: $d-ctl;
+        }
+
+        .dropdown-toggle {
+            box-shadow: none;
+
+            &:not(:disabled):not(.disabled):active, &:not(:disabled):not(.disabled).active, .show > &.dropdown-toggle {
+                background-color: $d-bg;
+            }
+        }
+    }
+
+    .bootstrap-select .dropdown-toggle:focus, 
+    .bootstrap-select>select.mobile-device:focus+.dropdown-toggle {
+        outline: none !important;
+    }
+
+    .bootstrap-select.show-menu-arrow .dropdown-toggle .filter-option:after {
+        border-bottom-color: $d-bg;
+    }
+
+    .dropdown-menu {
+        background-color: $d-bg;
+
+        .dropdown-item {
+            color: $d-ctl;
+
+            &:active, &.active, &:hover, &:focus {
+                background-color: lighten($d-bg, 3.2%);
+                color: $d-ctl;
+            }
+        }
+    }
+
+    input[type="checkbox"] {
+        &::after {
+            background-color: $d-bg;
+            border-color: $d-border;
+        }
+    }
+
+    .custom-select {
+        border-color: $d-border;
+    }
+
+    .custom-file-label {
+        background-color: $dark-card;
+        border-color: $d-border;
+    }
+
+}

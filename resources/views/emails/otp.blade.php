@@ -1,0 +1,1 @@
+<h5>Login OTP : {{$data}}</h5>

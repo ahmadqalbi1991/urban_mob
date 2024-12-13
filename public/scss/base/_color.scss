@@ -1,0 +1,638 @@
+
+
+/*------------------
+Color Mixins
+-------------------*/
+
+.color-white {
+    color: $white;
+}
+
+.body-bg{
+    background: $body-bg;
+}
+
+.text-light{
+    color: #999999 !important;
+}
+
+.text-info{
+    color: #63beff !important;
+}
+
+.text-pelorous{
+    color: $pelorous !important;
+}
+
+.text-kimberly{
+    color: $kimberly !important;
+}
+
+.text-red{
+    color: #ff0000;
+}
+
+.text-green{
+    color: #4bca06;
+}
+
+.blue-italic{
+    color: #0006fb;
+    font-style: italic;
+}
+
+.text-purple{
+    color: #7300f4;
+}
+
+.color-dark,
+.text-dark {
+    color: $dark !important;
+}
+
+.color-muted,
+.text-muted {
+    color: $muted !important;
+}
+
+.color-dpink,
+.text-dpink {
+    color: $deep-pink;
+}
+
+.color-lgreen,
+.text-lgreen {
+    color: $light-green;
+}
+
+.color-gray,
+.text-gray {
+    color: $gray;
+}
+
+.color-pale-sky,
+.text-pale-sky {
+    color: $pale-sky;
+}
+
+.icon-razzmatazz{
+
+    i,span{
+        color: $razzmatazz !important;
+    }
+}
+
+.icon-muted{
+
+    i{
+        color: $muted !important;
+    }
+}
+
+.icon-dpink{
+
+    i{
+        color: $deep-pink !important;
+    }
+}
+
+.icon-success{
+    
+    i{
+        color: $success !important;
+    }
+}
+
+.icon-primary{
+
+    i{
+        color: $primary !important;
+    }
+}
+
+
+.icon-danger{
+
+    i{
+        color: $danger !important;
+    }
+}
+
+.icon-warning{
+
+    i{
+        color: $warning !important;
+    }
+}
+
+.bg-gallery{
+    background: $gallery !important;
+}
+
+.bg-dark {
+    background-color: $dark;
+    color: $white;
+    fill: $dark;
+}
+
+.bg-light {
+    background-color: $light;
+    color: $dark;
+    fill: $light;
+}
+
+.bg-white {
+    background-color: $white;
+}
+
+.bg-transparent {
+    background-color: transparent;
+    color: $black;
+}
+
+.bg-dpink {
+    background-color: $deep-pink !important;
+}
+
+.bg-lgreen {
+    background-color: $light-green !important;
+}
+
+.bg-inverse{
+    background: $inverse !important;
+}
+
+.bg-pink{
+    background: $pink !important;
+}
+
+/*  Background Darken
+----------------------*/
+
+.bg-primary-darken-5 {
+    background-color: darken($primary, 50%);
+}
+
+.bg-secondary-darken-5 {
+    background-color: darken($secondary, 50%);
+}
+
+.bg-success-darken-5 {
+    background-color: darken($success, 50%);
+}
+
+.bg-info-darken-5 {
+    background-color: darken($info, 50%);
+}
+
+.bg-danger-darken-5 {
+    background-color: darken($danger, 50%);
+}
+
+.bg-warning-darken-5 {
+    background-color: darken($warning, 50%);
+}
+
+
+/*  Background Lighten
+----------------------*/
+
+.bg-primary-lighten-2 {
+    background-color: lighten($primary, 30%);
+    color: $primary;
+}
+
+.bg-secondary-lighten-2 {
+    background-color: lighten($secondary, 30%);
+    color: $secondary;
+}
+
+.bg-success-lighten-2 {
+    background-color: lighten($success, 30%);
+    color: $success;
+}
+
+.bg-info-lighten-2 {
+    background-color: lighten($info, 30%);
+    color: $info;
+}
+
+.bg-danger-lighten-2 {
+    background-color: lighten($danger, 30%);
+    color: $danger;
+}
+
+.bg-warning-lighten-2 {
+    background-color: lighten($warning, 30%);
+    color: $warning;
+}
+
+
+/*  Background Transparent
+----------------------*/
+.bg-primary-rgba1 {
+    background-color: rgba($primary, 10%);
+}
+
+.bg-secondary-rgba1 {
+    background-color: rgba($secondary, 10%);
+}
+
+.bg-success-rgba1 {
+    background-color: rgba($success, 10%);
+}
+
+.bg-info-rgba1 {
+    background-color: rgba($info, 10%);
+}
+
+.bg-danger-rgba1 {
+    background-color: rgba($danger, 10%);
+}
+
+.bg-warning-rgba1 {
+    background-color: rgba($warning, 10%);
+}
+
+.bg-inverse-rgba1{
+    background-color: rgba($inverse, 10%)
+}
+
+
+/*    Border Mixins
+--------------------------*/
+
+.border-primary {
+    border-color: $primary;
+}
+
+.border-secondary {
+    border-color: $secondary;
+}
+
+.border-success {
+    border-color: $success;
+}
+
+.border-info {
+    border-color: $info;
+}
+
+.border-danger {
+    border-color: $danger;
+}
+
+.border-warning {
+    border-color: $warning;
+}
+
+.border-dark {
+    border-color: $dark;
+}
+
+
+// /*    color page
+// -----------------------------*/
+// $blue-madison: #3aa6b4;
+// $cinnabar: #e45444;
+// $danube: #5289CA;
+// $violet-red: #F13C79;
+// $buttercup: #F19D14;
+// $blue: #4501EB;
+// $picton-blue: #44DAF4;
+// $scooter: #36B8D7;
+// $turquoise: #46EEAD;
+// $flamingo: #F15520;
+// $sun : #F7AB10;
+// $big-stone: #152037;
+// $mirage: #121929;
+// $dodger-blue: #2277EF;
+// $candlelight: #FAD00B;
+// $fuchsia-blue: #835DC4;
+// $flamingo-dark: #F25634;
+// $outrageous-orange: #FC5532;
+
+
+// .kimberly{
+//     color: $kimberly;
+
+//     &-bg{
+//         background: $kimberly;
+//     }
+
+//     &-shadow{
+//         box-shadow: 0px 5px 10px 0px rgba(115, 98, 155, 0.3); 
+//     }
+// }
+
+// .outrageous-orange{
+//     color: $outrageous-orange;
+
+//     &-bg{
+//         background: $outrageous-orange;
+//     }
+
+//     &-shadow{
+//         box-shadow: 0px 10px 20px 0px rgba(252, 85, 50, 0.3); 
+//     }
+// }
+
+
+// .flamingo-dark{
+//     color: $flamingo-dark;
+
+//     &-bg{
+//         background: $flamingo-dark;
+//     }
+// }
+
+// .fuchsia-blue{
+//     color: $fuchsia-blue;
+
+//     &-bg{
+//         background: $fuchsia-blue;
+//     }
+// }
+
+
+// .candlelight{
+//     color: $candlelight;
+
+//     &-bg{
+//         background: $candlelight;
+//     }
+// }
+
+// .dodger-blue{
+//     color: $dodger-blue;
+
+//     &-bg{
+//         background: $dodger-blue;
+//     }
+
+//     &-shadow{
+//         box-shadow: 0px 10px 20px 0px rgba(29, 127, 240, 0.3); 
+//     }
+// }
+
+// .mirage{
+//     color: $mirage;
+
+//     &-bg{
+//         background: $mirage;
+//     }
+// }
+
+// .big-stone{
+//     color: $big-stone;
+
+//     &-bg{
+//         background: $big-stone;
+//     }
+// }
+
+// .sun{
+//     color: $sun;
+
+//     &-bg{
+//         background: $sun;
+//     }
+// }
+
+// .flamingo{
+//     color: $flamingo;
+
+//     &-bg{
+//         background: $flamingo;
+//     }
+// }
+
+// .turquoise{
+//     color: $turquoise;
+
+//     &-bg{
+//         background: $turquoise;
+//     }
+// }
+
+// .scooter{
+//     color: $scooter;
+
+//     &-bg{
+//         background: $scooter;
+//     }
+// }
+
+// .picton-blue{
+//     color: $picton-blue !important;
+
+//     &-bg{
+//         background: $picton-blue;
+//     }
+// }
+
+// .blue-madison{
+//     color: $blue-madison;
+
+//     &-bg{
+//         background: $blue-madison;
+//     }
+// }
+
+// .cinnabar{
+//     color: #e45444;
+
+//     &-bg{
+//         background: #e45444;
+//     }
+// }
+
+// .danube{
+//     color: $danube;
+
+//     &-bg{
+//         background: $danube;
+//     }
+// }
+
+// .violet-red{
+//     color: $violet-red;
+
+//     &-bg{
+//         background: $violet-red;
+//     }
+// }
+
+// .buttercup{
+//     color: $buttercup;
+
+//     &-bg{
+//         background: $buttercup;
+//     }
+// }
+
+// .blue{
+//     color: $blue;
+
+//     &-bg{
+//         background: $blue;
+//     }
+// }
+
+// /*    Brand Background
+// -----------------------------*/
+
+// .bg-facebook {
+//     background: $facebook;
+//     fill: $facebook;
+// }
+
+// .bg-twitter {
+//     background: $twitter;
+//     fill: $twitter;
+// }
+
+// .bg-youtube {
+//     background: $youtube;
+//     fill: $youtube;
+// }
+
+// .bg-instagram {
+//     background: $instagram;
+//     fill: $instagram;
+// }
+
+// .bg-google-plus {
+//     background: $google-plus;
+//     fill: $google-plus;
+// }
+
+// .bg-linkedin {
+//     background: $linkedin;
+//     fill: $linkedin;
+// }
+
+// .color-facebook {
+//     color: $facebook;
+// }
+
+// .color-instagram {
+//     color: $instagram;
+// }
+
+// .color-twitter {
+//     color: $twitter;
+// }
+
+// .color-youtube {
+//     color: $youtube;
+// }
+
+// .gradient {
+
+//     &-default{
+//         background: #BCBCBC;
+//     }
+
+//     &-1 {
+//         @extend %gradient-1;
+//         color: $white !important;
+
+//         &-shadow{
+//             box-shadow: 0px 10px 20px 0px rgba(235, 33, 83, 0.3) !important; 
+//         }
+
+//         &-text{
+//             color: #f53c79;
+//         }
+//     }
+//     &-2 {
+//         @extend %gradient-2;
+//         color: $white !important;
+
+//         &-shadow{
+//             box-shadow: 0px 10px 20px 0px rgba(66, 0, 235, 0.3) !important; 
+//         }
+
+//         &-text{
+//             color: #4409eb;
+//         }
+//     }
+//     &-3 {
+//         @extend %gradient-3;
+//         color: $white !important;
+
+//         &-shadow{
+//             box-shadow: 0px 10px 20px 0px rgba(53, 185, 216, 0.3) !important; 
+//         }
+
+//         &-text{
+//             color: #38bad9;
+//         }
+//     }
+//     &-4 {
+//         @extend %gradient-4;
+
+//         &-shadow{
+//             box-shadow: 0px 10px 20px 0px rgba(242, 85, 33, 0.3) !important; 
+//         }
+//     }
+//     &-5 {
+//         @extend %gradient-5;
+//         color: $white !important;
+
+//         &-shadow{
+//             box-shadow: 0px 10px 20px 0px rgba(235, 33, 83, 0.3) !important;
+//         }
+//     }
+//     &-6 {
+//         @extend %gradient-6;
+
+//         &-shadow{
+//             box-shadow: 0px 10px 20px 0px rgba(53, 185, 216, 0.3) !important; 
+//         }
+//     }
+//     &-7 {
+//         @extend %gradient-7;
+
+//         &-shadow{
+//             box-shadow: 0px 10px 20px 0px rgba(66, 0, 235, 0.3) !important; 
+//         }
+//     }
+//     &-8{
+//         @extend %gradient-8;
+
+//         &-shadow{
+//             box-shadow: 0px 10px 20px 0px rgba(242, 85, 33, 0.3) !important; 
+//         }
+//     }
+//     &-9 {
+//         @extend %gradient-9;
+//         color: $white !important;
+
+//         i,span{
+//             color: #fff !important;
+//         }
+
+//         &-shadow {
+//             box-shadow: 0px 10px 20px 0px rgba(243, 31, 121, 0.3)  !important;
+//         }
+//     }
+//     &-10 {
+//         @extend %gradient-10;
+//         color: $white !important;
+
+//         i,span{
+//             color: #fff !important;
+//         }
+
+//         &-shadow {
+//             box-shadow: 0px 10px 20px 0px rgba(242, 85, 33, 0.3) !important;
+//         }
+
+//         &-text{
+//             color: #f8bc0c;
+//         }
+//     }
+// }
+

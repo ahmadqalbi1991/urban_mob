@@ -1,0 +1,131 @@
+.category-grid {
+    .masonary_grid_img {
+        margin-bottom: 30px;
+        position     : relative;
+        overflow     : hidden;
+        border-radius: 4px;
+
+        .grid-bg {
+            background-size    : cover;
+            background-position: center;
+            -webkit-transition : all 0.4s ease-in-out;
+            transition         : all 0.4s ease-in-out;
+            min-height         : 250px;
+        }
+
+        &::after {
+            content   : '';
+            position  : absolute;
+            left      : 0;
+            right     : 0;
+            top       : 0;
+            bottom    : 0;
+            background: rgba(114,124,245,0.25);
+            z-index   : 0;
+        }
+
+        &:focus,
+        &:hover {
+            .place-name {
+                background: $primary;
+            }
+
+            .grid-bg {
+                -webkit-transform: scale(1.1);
+                transform        : scale(1.1);
+            }
+            a.discover {
+                bottom: 15px;
+            }
+        }
+
+        .place_name_listing {
+            left             : 0;
+            margin           : 0 auto;
+            position         : absolute;
+            right            : 0;
+            text-align       : center;
+            top              : 50%;
+            -webkit-transform: translateY(-50%);
+            transform        : translateY(-50%);
+            width            : 170px;
+            z-index          : 1;
+        }
+
+        .place-name {
+            background        : rgba(0,0,0,0.75);
+            color             : $white;
+            border-radius     : 4px;
+            padding           : 5px 20px;
+            font-weight       : 600;
+            font-size         : 16px;
+            display           : inline-block;
+            -webkit-transition: all 0.5s ease-in-out;
+            transition        : all 0.5s ease-in-out;
+        }
+
+        .place-listing {
+            // background : $black;
+            color      : $white;
+            padding    : 15px 20px;
+            display    : inline-block;
+            font-size  : 14px;
+            font-weight: 600;
+        }
+
+        a.discover {
+            position: absolute;
+            right: 20px;
+            bottom: -20px;
+            color: #fff;
+            z-index: 99;
+            border-bottom: 1px solid #fff;
+        }
+    }
+}
+
+.grid-bg-1 {
+    background: url("../../assets/images/grid/12.jpg");
+}
+
+.grid-bg-2 {
+    background: url("../../assets/images/grid/9.jpg");
+}
+
+.grid-bg-3 {
+    background: url("../../assets/images/grid/6.jpg");
+}
+
+.grid-bg-4 {
+    background: url("../../assets/images/grid/10.jpg");
+}
+
+.grid-bg-5 {
+    background: url("../../assets/images/grid/4.jpg");
+}
+
+.grid-bg-6 {
+    background: url("../../assets/images/grid/6.jpg");
+}
+.grid-bg-7 {
+    background: url("../../assets/images/grid/7.jpg");
+}
+.grid-bg-8 {
+    background: url("../../assets/images/grid/12.jpg");
+}
+.grid-bg-9 {
+    background: url("../../assets/images/grid/9.jpg");
+}
+.grid-bg-10 {
+    background: url("../../assets/images/grid/10.jpg");
+}
+.grid-bg-11 {
+    background: url("../../assets/images/grid/11.jpg");
+}
+.grid-bg-12 {
+    background: url("../../assets/images/grid/12.jpg");
+}
+
+
+
+
